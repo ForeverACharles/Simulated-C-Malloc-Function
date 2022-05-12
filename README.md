@@ -10,7 +10,7 @@ Metadata is used to keep track of the different memory blocks in the array. The 
 - The next two bytes represent the size of the requested memory block
 - The final two bytes represent the location of the next memory block (the beginning of the metadata belonging to the next block)
 
-#### The following is an example of the metadata required to represent an allocated section of memoery with a region of 1234 bytes starting at index 0 and ending at index 1239. 
+#### The following is an example of the metadata required to represent an allocated section of memory with a region of 1234 bytes starting at index 0 and ending at index 1239. 
 
 | Byte 1 | Byte 2 | Byte 3 | Byte 4| Byte 5 | Allocated Region |
 |--------|--------|--------|-------|--------|------------------|
