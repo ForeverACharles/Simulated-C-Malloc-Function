@@ -1,0 +1,27 @@
+Testcases.txt
+
+WorkloadD: 
+This workload is a general test for malloc() and free(). It simulates a user randomly calling malloc() or free(), with each malloc() having a random size between 0 and 511 bytes
+
+Randomly attempts to malloc() or free() a total of 240 times.
+This workload may finish with unfreed malloc() pointers. A helper function freePointers() is used to free all of the remaining pointers.
+
+
+WorkloadE: 
+This workload tests malloc()’s ability to allocate memory inside of previously free()’d memory blocks. It also tests malloc()’s “first fit” ability.
+
+First, malloc()s 3 times of size:
+100 bytes
+50 bytes
+200 bytes
+Second, free() is called on the first two pointers, free()ing a total of 160 bytes (100 + 50 + 2*5 of metadata). 
+Third, malloc(130) is called to see if it will be stored at the beginning of the memory where the free()s were just called.
+This workload may finish with unfreed malloc() pointers. A helper function freePointers() is used to free all of the remaining pointers.
+
+
+WorkloadF: 
+This workload robustly tests free()’s ability to merge adjacent blocks of free memory. 
+
+First, malloc() 40 times each of size 95 bytes - store all of the pointers in an array. 
+Second, free() all the pointers stored at an odd index in the array. Up to this point, we still have 40 blocks of memory.
+Third, free() all pointers with an even index. This automatically combines all the adjacent blocks of free memory and leaves us with one large free block of memory.
