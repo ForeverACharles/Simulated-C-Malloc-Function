@@ -1,4 +1,4 @@
-# Simulated-C-Malloc-Function
+# Simulated C Malloc Function
 C's malloc dynamic memory allocation simulated using fixed-length 4096 byte array
 
 ### How to run
