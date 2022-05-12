@@ -4,7 +4,7 @@ C's malloc() and free() dynamic memory allocation functions simulated using fixe
 
 ## Program details
 
-The executable runs individual 6 workloads to test the robustness of the custom malloc() function. Statiscial data is recorded and reported after all iterations of each workload are finished.
+The executable runs 6 individual workloads to test the robustness of the custom malloc() function. Statiscial data is recorded and reported after all iterations of each workload are finished.
 
 ### How to run
 
