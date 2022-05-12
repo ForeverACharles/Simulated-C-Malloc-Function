@@ -1,5 +1,6 @@
 # Simulated C Malloc Function
-C's malloc dynamic memory allocation simulated using fixed-length 4096 byte array
+
+C's malloc() and free() dynamic memory allocation functions simulated using fixed-length 4096 byte array
 
 ### How to run
 
