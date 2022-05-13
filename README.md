@@ -24,7 +24,7 @@ However, it’s also possible to implement this flattened linked list metadata w
 
 ### Program Details
 
-The executable runs 6 individual workloads to test the robustness of the custom malloc() function. Statiscial data is recorded and reported after all iterations of each workload are finished.
+The executable runs 6 individual workloads to test the robustness of the custom malloc() function. Statistical data is recorded and reported after all iterations of each workload are finished.
 
 ### How to run
 
